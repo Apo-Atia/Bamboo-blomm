@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BambooBloom - Eco-Friendly Bamboo Products</title>
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="BambooBloom Logo">
+          <span>BambooBloom</span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button id="cart-btn" aria-label="Shopping cart">
+            <img src="images/cart.svg" alt="Cart">
+            <span id="cart-count">0</span>
+          </button>
+          <button id="menu-toggle" aria-label="Menu toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Sustainable Living <span>Starts with Bamboo</span></h1>
+          <p>Eco-friendly alternatives to plastic products that are better for you and the planet</p>
+          <a href="products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="container">
+        <h2>Our Bestsellers</h2>
+        <p class="section-subtitle">Discover our most popular bamboo essentials</p>
+        
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/AdultBrush.jpg" alt="Bamboo Toothbrush">
+              <div class="product-badge">Bestseller</div>
+            </div>
+            <div class="product-info">
+              <h3>Bamboo Toothbrush</h3>
+              <p>Biodegradable handle with soft bristles</p>
+              <div class="product-price">$8.99</div>
+              <button class="btn btn-outline add-to-cart" data-id="1" data-name="Bamboo Toothbrush" data-price="8.99">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/DryBrushingBodyBrush.jpg" alt="Body Brush">
+            </div>
+            <div class="product-info">
+              <h3>Dry Brushing Body Brush</h3>
+              <p>Natural exfoliation for healthy skin</p>
+              <div class="product-price">$14.99</div>
+              <button class="btn btn-outline add-to-cart" data-id="2" data-name="Dry Brushing Body Brush" data-price="14.99">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/BambooHairBrush.png" alt="Hair Brush">
+              <div class="product-badge">New</div>
+            </div>
+            <div class="product-info">
+              <h3>Bamboo Hair Brush</h3>
+              <p>Gentle detangling with natural bristles</p>
+              <div class="product-price">$19.99</div>
+              <button class="btn btn-outline add-to-cart" data-id="3" data-name="Bamboo Hair Brush" data-price="19.99">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/PetGroomingBrush.jpg" alt="Pet Brush">
+            </div>
+            <div class="product-info">
+              <h3>Pet Grooming Brush</h3>
+              <p>Gentle care for your furry friends</p>
+              <div class="product-price">$16.99</div>
+              <button class="btn btn-outline add-to-cart" data-id="4" data-name="Pet Grooming Brush" data-price="16.99">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="center-btn">
+          <a href="products.html" class="btn btn-secondary">View All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="eco-impact">
+      <div class="container">
+        <div class="impact-content">
+          <div class="impact-text">
+            <h2>The BambooBloom Difference</h2>
+            <p>Every year, billions of plastic brushes end up in landfills and oceans. By choosing bamboo alternatives, you're making a significant impact:</p>
+            
+            <ul class="impact-list">
+              <li>
+                <div class="impact-icon">🌱</div>
+                <div class="impact-detail">
+                  <h3>Sustainable Resource</h3>
+                  <p>Bamboo grows up to 3 feet per day without pesticides or fertilizers</p>
+                </div>
+              </li>
+              <li>
+                <div class="impact-icon">♻️</div>
+                <div class="impact-detail">
+                  <h3>Biodegradable</h3>
+                  <p>Our products naturally decompose, leaving no harmful microplastics</p>
+                </div>
+              </li>
+              <li>
+                <div class="impact-icon">🌊</div>
+                <div class="impact-detail">
+                  <h3>Ocean Friendly</h3>
+                  <p>Each bamboo product keeps plastic out of our oceans</p>
+                </div>
+              </li>
+            </ul>
+            
+            <a href="about.html" class="btn btn-primary">Learn More</a>
+          </div>
+          <div class="impact-image">
+            <img src="https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg" alt="Bamboo forest">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="stars">★★★★★</div>
+              <p>"I've completely switched all my brushes to BambooBloom. They're beautifully made, work wonderfully, and I love knowing I'm reducing plastic waste."</p>
+              <div class="testimonial-author">— Sarah J.</div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="stars">★★★★★</div>
+              <p>"The dry brushing body brush has transformed my skin care routine. It's so much better than my old plastic brush and feels luxurious to use."</p>
+              <div class="testimonial-author">— Michael T.</div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="stars">★★★★★</div>
+              <p>"My dog actually enjoys being groomed now that I use the bamboo pet brush. It's gentle but effective, and I feel good about the eco-friendly choice."</p>
+              <div class="testimonial-author">— Emily R.</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Join Our Eco Community</h2>
+          <p>Subscribe for sustainable living tips, exclusive offers, and updates on new products.</p>
+          <form id="newsletter-form">
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="images/logo.svg" alt="BambooBloom Logo">
+            <span>BambooBloom</span>
+          </div>
+          <p>Sustainable bamboo alternatives for everyday products. Better for you, better for the planet.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="products.html#toothbrushes">Toothbrushes</a></li>
+            <li><a href="products.html#body-brushes">Body Brushes</a></li>
+            <li><a href="products.html#hair-brushes">Hair Brushes</a></li>
+            <li><a href="products.html#scalp-brushes">Scalp Brushes</a></li>
+            <li><a href="products.html#pet-brushes">Pet Brushes</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="about.html#sustainability">Sustainability</a></li>
+            <li><a href="about.html#materials">Materials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="shipping.html">Shipping</a></li>
+            <li><a href="returns.html">Returns</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+          <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook"></a>
+          <a href="#" aria-label="Pinterest"><img src="images/pinterest.svg" alt="Pinterest"></a>
+        </div>
+        <p>&copy; 2025 BambooBloom. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cart-sidebar" class="hidden">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart" aria-label="Close cart">×</button>
+    </div>
+    <div id="cart-items">
+      <!-- Cart items will be added here via JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-amount">$0.00</span>
+      </div>
+      <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <div id="overlay" class="hidden"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>
