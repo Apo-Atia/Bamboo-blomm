@@ -1,0 +1,317 @@
+/* About Page Styles */
+
+/* Mission Story Section */
+.mission-story {
+  padding-bottom: var(--spacing-xxl);
+}
+
+.story-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xxl);
+}
+
+.story-image {
+  flex: 1;
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.story-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+  transition: transform var(--transition-slow);
+}
+
+.story-text {
+  flex: 1;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.story-text h2 {
+  margin-bottom: var(--spacing-md);
+  text-align: left;
+}
+
+.story-text p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Sustainability Section */
+.sustainability {
+  background-color: rgba(74, 103, 65, 0.05);
+  padding: var(--spacing-xxl) 0;
+}
+
+.sustainability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.sustainability-card {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: transform var(--transition-medium);
+}
+
+.sustainability-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(74, 103, 65, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-md);
+}
+
+.card-icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.sustainability-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Impact Counter Section */
+.impact-counter {
+  padding: var(--spacing-xxl) 0;
+  text-align: center;
+}
+
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.counter-item {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.counter-number {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.counter-label {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+}
+
+/* Materials Section */
+.materials {
+  padding: var(--spacing-xxl) 0;
+}
+
+.materials-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xxl);
+  margin-top: var(--spacing-xl);
+}
+
+.material-image {
+  flex: 1;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.material-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+  transition: transform var(--transition-slow);
+}
+
+.material-text {
+  flex: 1;
+}
+
+.material-text h3 {
+  margin: var(--spacing-lg) 0 var(--spacing-md);
+  color: var(--color-primary-dark);
+}
+
+.material-text h3:first-child {
+  margin-top: 0;
+}
+
+.material-text ul {
+  list-style: disc;
+  padding-left: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.material-text ul li {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Team Section */
+.team {
+  background-color: rgba(74, 103, 65, 0.05);
+  padding: var(--spacing-xxl) 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.team-member {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: transform var(--transition-medium);
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  margin: var(--spacing-md) 0 var(--spacing-xs);
+  color: var(--color-primary-dark);
+}
+
+.member-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.team-member p {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  font-size: 0.9rem;
+}
+
+/* Join Mission Section */
+.join-mission {
+  padding: var(--spacing-xxl) 0;
+  background-image: url('https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--color-white);
+}
+
+.join-mission::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(74, 103, 65, 0.9), rgba(74, 103, 65, 0.7));
+}
+
+.join-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.join-content h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.join-content p {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-xl);
+}
+
+.join-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.join-buttons .btn-outline {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.join-buttons .btn-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .story-content,
+  .materials-content {
+    flex-direction: column;
+    gap: var(--spacing-xl);
+  }
+  
+  .story-image,
+  .material-image {
+    width: 100%;
+  }
+  
+  .counter-number {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .counter-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .join-content p {
+    font-size: 1.1rem;
+  }
+  
+  .join-buttons {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+}

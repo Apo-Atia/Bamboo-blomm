@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - BambooBloom</title>
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="BambooBloom Logo">
+          <span>BambooBloom</span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button id="cart-btn" aria-label="Shopping cart">
+            <img src="images/cart.svg" alt="Cart">
+            <span id="cart-count">0</span>
+          </button>
+          <button id="menu-toggle" aria-label="Menu toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Get in touch with our team.</p>
+      </div>
+    </section>
+
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>Have questions about our products, sustainability practices, or need help with an order? We're here to help!</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <img src="images/email-icon.svg" alt="Email">
+                </div>
+                <div class="method-details">
+                  <h3>Email Us</h3>
+                  <p>hello@bambooBloom.com</p>
+                  <p class="detail-note">We typically respond within 24 hours</p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <img src="images/phone-icon.svg" alt="Phone">
+                </div>
+                <div class="method-details">
+                  <h3>Call Us</h3>
+                  <p>(555) 123-4567</p>
+                  <p class="detail-note">Monday-Friday: 9am-5pm PST</p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <img src="images/location-icon.svg" alt="Location">
+                </div>
+                <div class="method-details">
+                  <h3>Visit Us</h3>
+                  <p>123 Green Street<br>Portland, OR 97201</p>
+                  <p class="detail-note">By appointment only</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-connect">
+              <h3>Connect With Us</h3>
+              <div class="social-icons-large">
+                <a href="#" aria-label="Instagram" class="social-icon"><img src="images/instagram.svg" alt="Instagram"> Instagram</a>
+                <a href="#" aria-label="Facebook" class="social-icon"><img src="images/facebook.svg" alt="Facebook"> Facebook</a>
+                <a href="#" aria-label="Pinterest" class="social-icon"><img src="images/pinterest.svg" alt="Pinterest"> Pinterest</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="product-question">Product Question</option>
+                  <option value="order-status">Order Status</option>
+                  <option value="returns">Returns</option>
+                  <option value="wholesale">Wholesale Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <div class="form-check">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Sign up for our newsletter to receive sustainable living tips and exclusive offers</label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question" data-faq="1">
+              <h3>How long do bamboo toothbrushes last?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer" id="faq-1">
+              <p>Just like conventional toothbrushes, our bamboo toothbrushes should be replaced every 3-4 months, or when the bristles begin to fray. The bamboo handle can be composted after use, while the bristles should be removed and disposed of separately.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" data-faq="2">
+              <h3>Are your products completely plastic-free?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer" id="faq-2">
+              <p>Most of our products are 95-100% plastic-free. For some items, like toothbrushes, we currently use nylon bristles as there is no fully viable plastic-free alternative that meets hygiene standards. We're constantly researching new materials to make our products even more sustainable.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" data-faq="3">
+              <h3>How do I care for my bamboo products?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer" id="faq-3">
+              <p>To extend the life of your bamboo products, we recommend keeping them dry between uses. For toothbrushes and bath products, store them upright in a dry area. Occasionally oil wooden handles with food-grade mineral oil to maintain their appearance and prevent cracking.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" data-faq="4">
+              <h3>Do you ship internationally?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer" id="faq-4">
+              <p>Yes, we ship to most countries worldwide. International shipping typically takes 7-14 business days. Please note that customers are responsible for any customs fees or import taxes that may apply in your country.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-more">
+          <a href="faq.html" class="btn btn-secondary">View All FAQs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="images/logo.svg" alt="BambooBloom Logo">
+            <span>BambooBloom</span>
+          </div>
+          <p>Sustainable bamboo alternatives for everyday products. Better for you, better for the planet.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="products.html#toothbrushes">Toothbrushes</a></li>
+            <li><a href="products.html#body-brushes">Body Brushes</a></li>
+            <li><a href="products.html#hair-brushes">Hair Brushes</a></li>
+            <li><a href="products.html#scalp-brushes">Scalp Brushes</a></li>
+            <li><a href="products.html#pet-brushes">Pet Brushes</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="about.html#sustainability">Sustainability</a></li>
+            <li><a href="about.html#materials">Materials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="shipping.html">Shipping</a></li>
+            <li><a href="returns.html">Returns</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+          <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook"></a>
+          <a href="#" aria-label="Pinterest"><img src="images/pinterest.svg" alt="Pinterest"></a>
+        </div>
+        <p>&copy; 2025 BambooBloom. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cart-sidebar" class="hidden">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart" aria-label="Close cart">×</button>
+    </div>
+    <div id="cart-items">
+      <!-- Cart items will be added here via JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-amount">$0.00</span>
+      </div>
+      <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <div id="overlay" class="hidden"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
